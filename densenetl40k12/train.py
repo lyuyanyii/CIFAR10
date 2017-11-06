@@ -38,7 +38,7 @@ if __name__ == '__main__':
 		valid_func = env.make_func_from_loss_var(net.loss_var, "val", train_state = False)
 	
 		lr = 0.1
-		optimizer = megskull.optimizer.Momentum(lr, 0.9)
+		optimizer = megskull.optimizer.NesterovMomentum(lr, 0.9)
 		#optimizer.learning_rate = 0.01
 		optimizer(train_func)
 		

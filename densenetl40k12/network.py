@@ -32,7 +32,7 @@ def conv_bn(inp, ker_shape, stride, padding, out_chl, isrelu):
 	return l2
 """
 
-def bn_relu_conv(inp, ker_shape, stride, padding, out_chl, has_relu, has_bn):
+def bn_relu_conv(inp, ker_shape, stride, padding, out_chl, has_relu, has_bn, has_conv = True):
 	global idx
 	idx += 1
 	if has_bn:
@@ -46,6 +46,9 @@ def bn_relu_conv(inp, ker_shape, stride, padding, out_chl, has_relu, has_bn):
 	else:
 		l2 = l1
 	
+	if not has_conv:
+		return l2
+
 	l3 = Conv2D(
 		"conv{}".format(idx), l2, kernel_shape = ker_shape, stride = stride, padding = padding,
 		output_nr_channel = out_chl,
@@ -63,12 +66,18 @@ def dense_block(inp, k, l):
 		lay = Concat([lay, cur_lay], axis = 1)
 	return lay
 
-def transition(inp):
-	l1 = bn_relu_conv(inp, 1, 1, 0, inp.partial_shape[1], True, True)
+def transition(inp, i):
+	l1 = bn_relu_conv(inp, 1, 1, 0, inp.partial_shape[1], True, True, i != 2)
 	global idx
-	l2 = Pooling2D(
-		"Pooling{}".format(idx), l1, window = 2, mode = "AVERAGE"
-		)
+	idx += 1
+	if i != 2:
+		l2 = Pooling2D(
+			"Pooling{}".format(idx), l1, window = 2, mode = "AVERAGE"
+			)
+	else:
+		l2 = Pooling2D(
+			"Pooling{}".format(idx), l1, window = 8, stride = 8, mode = "AVERAGE"
+			)
 	return l2
 
 
@@ -105,13 +114,15 @@ def make_network(minibatch_size = 64):
 
 	k, l = 12, (40 - 4) // 3
 	for i in range(3):
-		lay = transition(dense_block(lay, k, l))
+		lay = transition(dense_block(lay, k, l), i)
 	
 	#global average pooling
+	print(lay.partial_shape)
 	feature = lay.mean(axis = 2).mean(axis = 2)
+	#feature = Pooling2D("glbpoling", lay, window = 8, stride = 8, mode = "AVERAGE")
 	pred = Softmax("pred", FullyConnected(
 		"fc0", feature, output_dim = 10,
-		W = G(mean = 0, std = (1 / 64)**0.5),
+		W = G(mean = 0, std = (1 / feature.partial_shape[1])**0.5),
 		b = C(0),
 		nonlinearity = Identity()
 		))
