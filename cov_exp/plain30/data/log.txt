@@ -1,0 +1,1107 @@
+[07 11:07:22 330@env.py:meghair.train.env] WRN --fast-run not enabled; execution may be slow
+[07 11:07:25 0@(unknown file):megbrain] create CompNode gpu4:0 from logical xpux:0
+[07 11:07:25 0@(unknown file):megbrain] cuda: gpu4: name=`TITAN Xp' dyn_mem_reserve=0.00MiB alignment=0x200
+[07 11:07:25 1021@opr.py:megbrain] create CompNode cpu0:0 from logical cpux:0
+[07 11:07:26 195@fprop.py:megskull.graph.fprop] FpropEnv(train): start fprop VarNode(owner_opr=weight_decay(loss){WeightDecay@0x7f7c109306d8})
+[07 11:07:26 161@fprop.py:megskull.graph.fprop] init FpropEnv(train) rng using random seed 2674914893
+[07 11:07:26 1231@opr.py:megbrain] WRN dtype of index in IndexingOneHot must be Int32, got Float32 for variable label; convert to Int32 implicitly
+[07 11:07:26 962@regularizer.py:megskull.opr.regularizer] weight decay:
+ conv1:W: 0.0001
+ bnaff1:k: 0.0001
+ conv2:W: 0.0001
+ bnaff2:k: 0.0001
+ conv3:W: 0.0001
+ bnaff3:k: 0.0001
+ conv4:W: 0.0001
+ bnaff4:k: 0.0001
+ conv5:W: 0.0001
+ bnaff5:k: 0.0001
+ conv6:W: 0.0001
+ bnaff6:k: 0.0001
+ conv7:W: 0.0001
+ bnaff7:k: 0.0001
+ conv8:W: 0.0001
+ bnaff8:k: 0.0001
+ conv9:W: 0.0001
+ bnaff9:k: 0.0001
+ conv10:W: 0.0001
+ bnaff10:k: 0.0001
+ conv11:W: 0.0001
+ bnaff11:k: 0.0001
+ conv12:W: 0.0001
+ bnaff12:k: 0.0001
+ conv13:W: 0.0001
+ bnaff13:k: 0.0001
+ conv14:W: 0.0001
+ bnaff14:k: 0.0001
+ conv15:W: 0.0001
+ bnaff15:k: 0.0001
+ conv16:W: 0.0001
+ bnaff16:k: 0.0001
+ conv17:W: 0.0001
+ bnaff17:k: 0.0001
+ conv18:W: 0.0001
+ bnaff18:k: 0.0001
+ conv19:W: 0.0001
+ bnaff19:k: 0.0001
+ conv20:W: 0.0001
+ bnaff20:k: 0.0001
+ conv21:W: 0.0001
+ bnaff21:k: 0.0001
+ conv22:W: 0.0001
+ bnaff22:k: 0.0001
+ conv23:W: 0.0001
+ bnaff23:k: 0.0001
+ conv24:W: 0.0001
+ bnaff24:k: 0.0001
+ conv25:W: 0.0001
+ bnaff25:k: 0.0001
+ conv26:W: 0.0001
+ bnaff26:k: 0.0001
+ conv27:W: 0.0001
+ bnaff27:k: 0.0001
+ conv28:W: 0.0001
+ bnaff28:k: 0.0001
+ conv29:W: 0.0001
+ bnaff29:k: 0.0001
+ conv30:W: 0.0001
+ bnaff30:k: 0.0001
+ conv31:W: 0.0001
+ bnaff31:k: 0.0001
+ fc0:W: 0.0001
+[07 11:07:26 54@param_init.py:megskull.opr.helper.param_init] start automatic initilization for 126 params
+[07 11:07:26 60@param_init.py:megskull.opr.helper.param_init] finished param initilization:
+ conv1:W{Conv2D}: from Gaussian with std=0.2722
+ conv2:W{Conv2D}: from Gaussian with std=0.1179
+ conv3:W{Conv2D}: from Gaussian with std=0.0833
+ conv4:W{Conv2D}: from Gaussian with std=0.0833
+ conv5:W{Conv2D}: from Gaussian with std=0.0833
+ conv6:W{Conv2D}: from Gaussian with std=0.0833
+ conv7:W{Conv2D}: from Gaussian with std=0.0833
+ conv8:W{Conv2D}: from Gaussian with std=0.0833
+ conv9:W{Conv2D}: from Gaussian with std=0.0833
+ conv10:W{Conv2D}: from Gaussian with std=0.0833
+ conv11:W{Conv2D}: from Gaussian with std=0.0833
+ conv12:W{Conv2D}: from Gaussian with std=0.0833
+ conv13:W{Conv2D}: from Gaussian with std=0.0589
+ conv14:W{Conv2D}: from Gaussian with std=0.0589
+ conv15:W{Conv2D}: from Gaussian with std=0.0589
+ conv16:W{Conv2D}: from Gaussian with std=0.0589
+ conv17:W{Conv2D}: from Gaussian with std=0.0589
+ conv18:W{Conv2D}: from Gaussian with std=0.0589
+ conv19:W{Conv2D}: from Gaussian with std=0.0589
+ conv20:W{Conv2D}: from Gaussian with std=0.0589
+ conv21:W{Conv2D}: from Gaussian with std=0.0589
+ conv22:W{Conv2D}: from Gaussian with std=0.0589
+ conv23:W{Conv2D}: from Gaussian with std=0.0417
+ conv24:W{Conv2D}: from Gaussian with std=0.0417
+ conv25:W{Conv2D}: from Gaussian with std=0.0417
+ conv26:W{Conv2D}: from Gaussian with std=0.0417
+ conv27:W{Conv2D}: from Gaussian with std=0.0417
+ conv28:W{Conv2D}: from Gaussian with std=0.0417
+ conv29:W{Conv2D}: from Gaussian with std=0.0417
+ conv30:W{Conv2D}: from Gaussian with std=0.0417
+ conv31:W{Conv2D}: from Gaussian with std=0.0417
+ fc0:W{FullyConnected}: from Gaussian with std=0.0884
+[07 11:07:26 1231@opr.py:megbrain] WRN dtype of index in IndexingOneHot must be Int32, got Float32 for variable label; convert to Int32 implicitly
+[07 11:07:26 272@fprop.py:megskull.graph.fprop] FpropEnv(train): shapes of var nodes:
+ data: (128, 3, 32, 32)
+ label: (128)
+ conv1: (128, 16, 32, 32)
+ bn1: (128, 16, 32, 32)
+ bnaff1: (128, 16, 32, 32)
+ conv2: (128, 32, 32, 32)
+ bn2: (128, 32, 32, 32)
+ bnaff2: (128, 32, 32, 32)
+ conv3: (128, 32, 32, 32)
+ bn3: (128, 32, 32, 32)
+ bnaff3: (128, 32, 32, 32)
+ conv4: (128, 32, 32, 32)
+ bn4: (128, 32, 32, 32)
+ bnaff4: (128, 32, 32, 32)
+ conv5: (128, 32, 32, 32)
+ bn5: (128, 32, 32, 32)
+ bnaff5: (128, 32, 32, 32)
+ conv6: (128, 32, 32, 32)
+ bn6: (128, 32, 32, 32)
+ bnaff6: (128, 32, 32, 32)
+ conv7: (128, 32, 32, 32)
+ bn7: (128, 32, 32, 32)
+ bnaff7: (128, 32, 32, 32)
+ conv8: (128, 32, 32, 32)
+ bn8: (128, 32, 32, 32)
+ bnaff8: (128, 32, 32, 32)
+ conv9: (128, 32, 32, 32)
+ bn9: (128, 32, 32, 32)
+ bnaff9: (128, 32, 32, 32)
+ conv10: (128, 32, 32, 32)
+ bn10: (128, 32, 32, 32)
+ bnaff10: (128, 32, 32, 32)
+ conv11: (128, 32, 32, 32)
+ bn11: (128, 32, 32, 32)
+ bnaff11: (128, 32, 32, 32)
+ pooling32: (128, 32, 16, 16)
+ conv12: (128, 64, 16, 16)
+ bn12: (128, 64, 16, 16)
+ bnaff12: (128, 64, 16, 16)
+ conv13: (128, 64, 16, 16)
+ bn13: (128, 64, 16, 16)
+ bnaff13: (128, 64, 16, 16)
+ conv14: (128, 64, 16, 16)
+ bn14: (128, 64, 16, 16)
+ bnaff14: (128, 64, 16, 16)
+ conv15: (128, 64, 16, 16)
+ bn15: (128, 64, 16, 16)
+ bnaff15: (128, 64, 16, 16)
+ conv16: (128, 64, 16, 16)
+ bn16: (128, 64, 16, 16)
+ bnaff16: (128, 64, 16, 16)
+ conv17: (128, 64, 16, 16)
+ bn17: (128, 64, 16, 16)
+ bnaff17: (128, 64, 16, 16)
+ conv18: (128, 64, 16, 16)
+ bn18: (128, 64, 16, 16)
+ bnaff18: (128, 64, 16, 16)
+ conv19: (128, 64, 16, 16)
+ bn19: (128, 64, 16, 16)
+ bnaff19: (128, 64, 16, 16)
+ conv20: (128, 64, 16, 16)
+ bn20: (128, 64, 16, 16)
+ bnaff20: (128, 64, 16, 16)
+ conv21: (128, 64, 16, 16)
+ bn21: (128, 64, 16, 16)
+ bnaff21: (128, 64, 16, 16)
+ pooling64: (128, 64, 8, 8)
+ conv22: (128, 128, 8, 8)
+ bn22: (128, 128, 8, 8)
+ bnaff22: (128, 128, 8, 8)
+ conv23: (128, 128, 8, 8)
+ bn23: (128, 128, 8, 8)
+ bnaff23: (128, 128, 8, 8)
+ conv24: (128, 128, 8, 8)
+ bn24: (128, 128, 8, 8)
+ bnaff24: (128, 128, 8, 8)
+ conv25: (128, 128, 8, 8)
+ bn25: (128, 128, 8, 8)
+ bnaff25: (128, 128, 8, 8)
+ conv26: (128, 128, 8, 8)
+ bn26: (128, 128, 8, 8)
+ bnaff26: (128, 128, 8, 8)
+ conv27: (128, 128, 8, 8)
+ bn27: (128, 128, 8, 8)
+ bnaff27: (128, 128, 8, 8)
+ conv28: (128, 128, 8, 8)
+ bn28: (128, 128, 8, 8)
+ bnaff28: (128, 128, 8, 8)
+ conv29: (128, 128, 8, 8)
+ bn29: (128, 128, 8, 8)
+ bnaff29: (128, 128, 8, 8)
+ conv30: (128, 128, 8, 8)
+ bn30: (128, 128, 8, 8)
+ bnaff30: (128, 128, 8, 8)
+ conv31: (128, 128, 8, 8)
+ bn31: (128, 128, 8, 8)
+ bnaff31: (128, 128, 8, 8)
+ fc0: (128, 10)
+ pred: (128, 10)
+ loss: (1)
+ weight_decay(loss): (1)
+[07 11:07:26 195@fprop.py:megskull.graph.fprop] FpropEnv(val): start fprop VarNode(owner_opr=weight_decay(loss){WeightDecay@0x7f7c109306d8})
+[07 11:07:26 1231@opr.py:megbrain] WRN dtype of index in IndexingOneHot must be Int32, got Float32 for variable label; convert to Int32 implicitly
+[07 11:07:26 962@regularizer.py:megskull.opr.regularizer] weight decay:
+ conv1:W: 0.0001
+ bnaff1:k: 0.0001
+ conv2:W: 0.0001
+ bnaff2:k: 0.0001
+ conv3:W: 0.0001
+ bnaff3:k: 0.0001
+ conv4:W: 0.0001
+ bnaff4:k: 0.0001
+ conv5:W: 0.0001
+ bnaff5:k: 0.0001
+ conv6:W: 0.0001
+ bnaff6:k: 0.0001
+ conv7:W: 0.0001
+ bnaff7:k: 0.0001
+ conv8:W: 0.0001
+ bnaff8:k: 0.0001
+ conv9:W: 0.0001
+ bnaff9:k: 0.0001
+ conv10:W: 0.0001
+ bnaff10:k: 0.0001
+ conv11:W: 0.0001
+ bnaff11:k: 0.0001
+ conv12:W: 0.0001
+ bnaff12:k: 0.0001
+ conv13:W: 0.0001
+ bnaff13:k: 0.0001
+ conv14:W: 0.0001
+ bnaff14:k: 0.0001
+ conv15:W: 0.0001
+ bnaff15:k: 0.0001
+ conv16:W: 0.0001
+ bnaff16:k: 0.0001
+ conv17:W: 0.0001
+ bnaff17:k: 0.0001
+ conv18:W: 0.0001
+ bnaff18:k: 0.0001
+ conv19:W: 0.0001
+ bnaff19:k: 0.0001
+ conv20:W: 0.0001
+ bnaff20:k: 0.0001
+ conv21:W: 0.0001
+ bnaff21:k: 0.0001
+ conv22:W: 0.0001
+ bnaff22:k: 0.0001
+ conv23:W: 0.0001
+ bnaff23:k: 0.0001
+ conv24:W: 0.0001
+ bnaff24:k: 0.0001
+ conv25:W: 0.0001
+ bnaff25:k: 0.0001
+ conv26:W: 0.0001
+ bnaff26:k: 0.0001
+ conv27:W: 0.0001
+ bnaff27:k: 0.0001
+ conv28:W: 0.0001
+ bnaff28:k: 0.0001
+ conv29:W: 0.0001
+ bnaff29:k: 0.0001
+ conv30:W: 0.0001
+ bnaff30:k: 0.0001
+ conv31:W: 0.0001
+ bnaff31:k: 0.0001
+ fc0:W: 0.0001
+[07 11:07:26 272@fprop.py:megskull.graph.fprop] FpropEnv(val): shapes of var nodes:
+ data: (128, 3, 32, 32)
+ label: (128)
+ conv1: (128, 16, 32, 32)
+ bn1: (128, 16, 32, 32)
+ bnaff1: (128, 16, 32, 32)
+ conv2: (128, 32, 32, 32)
+ bn2: (128, 32, 32, 32)
+ bnaff2: (128, 32, 32, 32)
+ conv3: (128, 32, 32, 32)
+ bn3: (128, 32, 32, 32)
+ bnaff3: (128, 32, 32, 32)
+ conv4: (128, 32, 32, 32)
+ bn4: (128, 32, 32, 32)
+ bnaff4: (128, 32, 32, 32)
+ conv5: (128, 32, 32, 32)
+ bn5: (128, 32, 32, 32)
+ bnaff5: (128, 32, 32, 32)
+ conv6: (128, 32, 32, 32)
+ bn6: (128, 32, 32, 32)
+ bnaff6: (128, 32, 32, 32)
+ conv7: (128, 32, 32, 32)
+ bn7: (128, 32, 32, 32)
+ bnaff7: (128, 32, 32, 32)
+ conv8: (128, 32, 32, 32)
+ bn8: (128, 32, 32, 32)
+ bnaff8: (128, 32, 32, 32)
+ conv9: (128, 32, 32, 32)
+ bn9: (128, 32, 32, 32)
+ bnaff9: (128, 32, 32, 32)
+ conv10: (128, 32, 32, 32)
+ bn10: (128, 32, 32, 32)
+ bnaff10: (128, 32, 32, 32)
+ conv11: (128, 32, 32, 32)
+ bn11: (128, 32, 32, 32)
+ bnaff11: (128, 32, 32, 32)
+ pooling32: (128, 32, 16, 16)
+ conv12: (128, 64, 16, 16)
+ bn12: (128, 64, 16, 16)
+ bnaff12: (128, 64, 16, 16)
+ conv13: (128, 64, 16, 16)
+ bn13: (128, 64, 16, 16)
+ bnaff13: (128, 64, 16, 16)
+ conv14: (128, 64, 16, 16)
+ bn14: (128, 64, 16, 16)
+ bnaff14: (128, 64, 16, 16)
+ conv15: (128, 64, 16, 16)
+ bn15: (128, 64, 16, 16)
+ bnaff15: (128, 64, 16, 16)
+ conv16: (128, 64, 16, 16)
+ bn16: (128, 64, 16, 16)
+ bnaff16: (128, 64, 16, 16)
+ conv17: (128, 64, 16, 16)
+ bn17: (128, 64, 16, 16)
+ bnaff17: (128, 64, 16, 16)
+ conv18: (128, 64, 16, 16)
+ bn18: (128, 64, 16, 16)
+ bnaff18: (128, 64, 16, 16)
+ conv19: (128, 64, 16, 16)
+ bn19: (128, 64, 16, 16)
+ bnaff19: (128, 64, 16, 16)
+ conv20: (128, 64, 16, 16)
+ bn20: (128, 64, 16, 16)
+ bnaff20: (128, 64, 16, 16)
+ conv21: (128, 64, 16, 16)
+ bn21: (128, 64, 16, 16)
+ bnaff21: (128, 64, 16, 16)
+ pooling64: (128, 64, 8, 8)
+ conv22: (128, 128, 8, 8)
+ bn22: (128, 128, 8, 8)
+ bnaff22: (128, 128, 8, 8)
+ conv23: (128, 128, 8, 8)
+ bn23: (128, 128, 8, 8)
+ bnaff23: (128, 128, 8, 8)
+ conv24: (128, 128, 8, 8)
+ bn24: (128, 128, 8, 8)
+ bnaff24: (128, 128, 8, 8)
+ conv25: (128, 128, 8, 8)
+ bn25: (128, 128, 8, 8)
+ bnaff25: (128, 128, 8, 8)
+ conv26: (128, 128, 8, 8)
+ bn26: (128, 128, 8, 8)
+ bnaff26: (128, 128, 8, 8)
+ conv27: (128, 128, 8, 8)
+ bn27: (128, 128, 8, 8)
+ bnaff27: (128, 128, 8, 8)
+ conv28: (128, 128, 8, 8)
+ bn28: (128, 128, 8, 8)
+ bnaff28: (128, 128, 8, 8)
+ conv29: (128, 128, 8, 8)
+ bn29: (128, 128, 8, 8)
+ bnaff29: (128, 128, 8, 8)
+ conv30: (128, 128, 8, 8)
+ bn30: (128, 128, 8, 8)
+ bnaff30: (128, 128, 8, 8)
+ conv31: (128, 128, 8, 8)
+ bn31: (128, 128, 8, 8)
+ bnaff31: (128, 128, 8, 8)
+ fc0: (128, 10)
+ pred: (128, 10)
+ loss: (1)
+ weight_decay(loss): (1)
+[07 11:07:26 245@base.py:megskull.optimizer.base] params to train:
+ conv1:W: (16, 3, 3, 3) dim=432 cn=gpu4:0
+ conv1:b: (16,) dim=16 cn=gpu4:0
+ bnaff1:k: (16,) dim=16 cn=gpu4:0
+ bnaff1:b: (16,) dim=16 cn=gpu4:0
+ conv2:W: (32, 16, 3, 3) dim=4608 cn=gpu4:0
+ conv2:b: (32,) dim=32 cn=gpu4:0
+ bnaff2:k: (32,) dim=32 cn=gpu4:0
+ bnaff2:b: (32,) dim=32 cn=gpu4:0
+ conv3:W: (32, 32, 3, 3) dim=9216 cn=gpu4:0
+ conv3:b: (32,) dim=32 cn=gpu4:0
+ bnaff3:k: (32,) dim=32 cn=gpu4:0
+ bnaff3:b: (32,) dim=32 cn=gpu4:0
+ conv4:W: (32, 32, 3, 3) dim=9216 cn=gpu4:0
+ conv4:b: (32,) dim=32 cn=gpu4:0
+ bnaff4:k: (32,) dim=32 cn=gpu4:0
+ bnaff4:b: (32,) dim=32 cn=gpu4:0
+ conv5:W: (32, 32, 3, 3) dim=9216 cn=gpu4:0
+ conv5:b: (32,) dim=32 cn=gpu4:0
+ bnaff5:k: (32,) dim=32 cn=gpu4:0
+ bnaff5:b: (32,) dim=32 cn=gpu4:0
+ conv6:W: (32, 32, 3, 3) dim=9216 cn=gpu4:0
+ conv6:b: (32,) dim=32 cn=gpu4:0
+ bnaff6:k: (32,) dim=32 cn=gpu4:0
+ bnaff6:b: (32,) dim=32 cn=gpu4:0
+ conv7:W: (32, 32, 3, 3) dim=9216 cn=gpu4:0
+ conv7:b: (32,) dim=32 cn=gpu4:0
+ bnaff7:k: (32,) dim=32 cn=gpu4:0
+ bnaff7:b: (32,) dim=32 cn=gpu4:0
+ conv8:W: (32, 32, 3, 3) dim=9216 cn=gpu4:0
+ conv8:b: (32,) dim=32 cn=gpu4:0
+ bnaff8:k: (32,) dim=32 cn=gpu4:0
+ bnaff8:b: (32,) dim=32 cn=gpu4:0
+ conv9:W: (32, 32, 3, 3) dim=9216 cn=gpu4:0
+ conv9:b: (32,) dim=32 cn=gpu4:0
+ bnaff9:k: (32,) dim=32 cn=gpu4:0
+ bnaff9:b: (32,) dim=32 cn=gpu4:0
+ conv10:W: (32, 32, 3, 3) dim=9216 cn=gpu4:0
+ conv10:b: (32,) dim=32 cn=gpu4:0
+ bnaff10:k: (32,) dim=32 cn=gpu4:0
+ bnaff10:b: (32,) dim=32 cn=gpu4:0
+ conv11:W: (32, 32, 3, 3) dim=9216 cn=gpu4:0
+ conv11:b: (32,) dim=32 cn=gpu4:0
+ bnaff11:k: (32,) dim=32 cn=gpu4:0
+ bnaff11:b: (32,) dim=32 cn=gpu4:0
+ conv12:W: (64, 32, 3, 3) dim=18432 cn=gpu4:0
+ conv12:b: (64,) dim=64 cn=gpu4:0
+ bnaff12:k: (64,) dim=64 cn=gpu4:0
+ bnaff12:b: (64,) dim=64 cn=gpu4:0
+ conv13:W: (64, 64, 3, 3) dim=36864 cn=gpu4:0
+ conv13:b: (64,) dim=64 cn=gpu4:0
+ bnaff13:k: (64,) dim=64 cn=gpu4:0
+ bnaff13:b: (64,) dim=64 cn=gpu4:0
+ conv14:W: (64, 64, 3, 3) dim=36864 cn=gpu4:0
+ conv14:b: (64,) dim=64 cn=gpu4:0
+ bnaff14:k: (64,) dim=64 cn=gpu4:0
+ bnaff14:b: (64,) dim=64 cn=gpu4:0
+ conv15:W: (64, 64, 3, 3) dim=36864 cn=gpu4:0
+ conv15:b: (64,) dim=64 cn=gpu4:0
+ bnaff15:k: (64,) dim=64 cn=gpu4:0
+ bnaff15:b: (64,) dim=64 cn=gpu4:0
+ conv16:W: (64, 64, 3, 3) dim=36864 cn=gpu4:0
+ conv16:b: (64,) dim=64 cn=gpu4:0
+ bnaff16:k: (64,) dim=64 cn=gpu4:0
+ bnaff16:b: (64,) dim=64 cn=gpu4:0
+ conv17:W: (64, 64, 3, 3) dim=36864 cn=gpu4:0
+ conv17:b: (64,) dim=64 cn=gpu4:0
+ bnaff17:k: (64,) dim=64 cn=gpu4:0
+ bnaff17:b: (64,) dim=64 cn=gpu4:0
+ conv18:W: (64, 64, 3, 3) dim=36864 cn=gpu4:0
+ conv18:b: (64,) dim=64 cn=gpu4:0
+ bnaff18:k: (64,) dim=64 cn=gpu4:0
+ bnaff18:b: (64,) dim=64 cn=gpu4:0
+ conv19:W: (64, 64, 3, 3) dim=36864 cn=gpu4:0
+ conv19:b: (64,) dim=64 cn=gpu4:0
+ bnaff19:k: (64,) dim=64 cn=gpu4:0
+ bnaff19:b: (64,) dim=64 cn=gpu4:0
+ conv20:W: (64, 64, 3, 3) dim=36864 cn=gpu4:0
+ conv20:b: (64,) dim=64 cn=gpu4:0
+ bnaff20:k: (64,) dim=64 cn=gpu4:0
+ bnaff20:b: (64,) dim=64 cn=gpu4:0
+ conv21:W: (64, 64, 3, 3) dim=36864 cn=gpu4:0
+ conv21:b: (64,) dim=64 cn=gpu4:0
+ bnaff21:k: (64,) dim=64 cn=gpu4:0
+ bnaff21:b: (64,) dim=64 cn=gpu4:0
+ conv22:W: (128, 64, 3, 3) dim=73728 cn=gpu4:0
+ conv22:b: (128,) dim=128 cn=gpu4:0
+ bnaff22:k: (128,) dim=128 cn=gpu4:0
+ bnaff22:b: (128,) dim=128 cn=gpu4:0
+ conv23:W: (128, 128, 3, 3) dim=147456 cn=gpu4:0
+ conv23:b: (128,) dim=128 cn=gpu4:0
+ bnaff23:k: (128,) dim=128 cn=gpu4:0
+ bnaff23:b: (128,) dim=128 cn=gpu4:0
+ conv24:W: (128, 128, 3, 3) dim=147456 cn=gpu4:0
+ conv24:b: (128,) dim=128 cn=gpu4:0
+ bnaff24:k: (128,) dim=128 cn=gpu4:0
+ bnaff24:b: (128,) dim=128 cn=gpu4:0
+ conv25:W: (128, 128, 3, 3) dim=147456 cn=gpu4:0
+ conv25:b: (128,) dim=128 cn=gpu4:0
+ bnaff25:k: (128,) dim=128 cn=gpu4:0
+ bnaff25:b: (128,) dim=128 cn=gpu4:0
+ conv26:W: (128, 128, 3, 3) dim=147456 cn=gpu4:0
+ conv26:b: (128,) dim=128 cn=gpu4:0
+ bnaff26:k: (128,) dim=128 cn=gpu4:0
+ bnaff26:b: (128,) dim=128 cn=gpu4:0
+ conv27:W: (128, 128, 3, 3) dim=147456 cn=gpu4:0
+ conv27:b: (128,) dim=128 cn=gpu4:0
+ bnaff27:k: (128,) dim=128 cn=gpu4:0
+ bnaff27:b: (128,) dim=128 cn=gpu4:0
+ conv28:W: (128, 128, 3, 3) dim=147456 cn=gpu4:0
+ conv28:b: (128,) dim=128 cn=gpu4:0
+ bnaff28:k: (128,) dim=128 cn=gpu4:0
+ bnaff28:b: (128,) dim=128 cn=gpu4:0
+ conv29:W: (128, 128, 3, 3) dim=147456 cn=gpu4:0
+ conv29:b: (128,) dim=128 cn=gpu4:0
+ bnaff29:k: (128,) dim=128 cn=gpu4:0
+ bnaff29:b: (128,) dim=128 cn=gpu4:0
+ conv30:W: (128, 128, 3, 3) dim=147456 cn=gpu4:0
+ conv30:b: (128,) dim=128 cn=gpu4:0
+ bnaff30:k: (128,) dim=128 cn=gpu4:0
+ bnaff30:b: (128,) dim=128 cn=gpu4:0
+ conv31:W: (128, 128, 3, 3) dim=147456 cn=gpu4:0
+ conv31:b: (128,) dim=128 cn=gpu4:0
+ bnaff31:k: (128,) dim=128 cn=gpu4:0
+ bnaff31:b: (128,) dim=128 cn=gpu4:0
+ fc0:W: (128, 10) dim=1280 cn=gpu4:0
+ fc0:b: (10,) dim=10 cn=gpu4:0
+ total_dim=1847082 (1.76M)
+[07 11:07:27 991@mgb.py:megbrain] graph optimization: applied 16 passes, total 26362 var(s) replaced; time=366.55ms
+[07 11:07:27 991@mgb.py:megbrain] opr seq of length 2913: var_static=3494 var_dynamic_shape=0 var_dynamic_storage=0 no_sys_alloc=0
+[07 11:07:27 991@mgb.py:megbrain] graph optimization: applied 8 passes, total 2651 var(s) replaced; time=36.17ms
+[07 11:07:27 991@mgb.py:megbrain] opr seq of length 883: var_static=987 var_dynamic_shape=0 var_dynamic_storage=0 no_sys_alloc=0
+[07 11:07:27 746@mgb.py:megbrain] static memory allocation:
+ comp_node           alloc                      lower_bound         upper_bound
+[07 11:07:27 746@mgb.py:megbrain] static mem alloc: nr_opr=378 nr_var=378 realtime=0.95msec(si0.14 mp+re0.29 omp0.01 alloc0.51)
+[07 11:07:27 746@mgb.py:megbrain] static memory allocation:
+ comp_node           alloc                      lower_bound         upper_bound
+   gpu4:0    589.81MiB( 618457600bytes)    589.68MiB( 99.98%)   2624.71MiB(445.01%)
+[07 11:07:27 746@mgb.py:megbrain] determined workspace size limit upper bound and reallocate static memory; bounds(MiB): gpu4:0=11183.13
+[07 11:07:27 746@mgb.py:megbrain] static memory allocation:
+ comp_node           alloc                      lower_bound         upper_bound
+   gpu4:0    595.81MiB( 624749568bytes)    589.68MiB( 98.97%)   2640.25MiB(443.14%)
+[07 11:07:27 746@mgb.py:megbrain] static mem alloc: nr_opr=2913 nr_var=3494 realtime=44.64msec(si1.55 mp+re28.65 omp1.63 alloc12.82)
+[07 11:07:52 746@mgb.py:megbrain] static memory allocation:
+ comp_node           alloc                      lower_bound         upper_bound
+   gpu4:0     32.03MiB(  33589248bytes)     32.03MiB( 99.99%)   1160.72MiB(3623.48%)
+[07 11:07:52 746@mgb.py:megbrain] determined workspace size limit upper bound and reallocate static memory; bounds(MiB): gpu4:0=11740.71
+[07 11:07:52 746@mgb.py:megbrain] static memory allocation:
+ comp_node           alloc                      lower_bound         upper_bound
+   gpu4:0     32.13MiB(  33687552bytes)     32.09MiB( 99.90%)   1163.71MiB(3622.21%)
+[07 11:07:52 746@mgb.py:megbrain] static mem alloc: nr_opr=883 nr_var=987 realtime=11.19msec(si1.70 mp+re7.52 omp0.24 alloc1.74)
+[07 11:07:52 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:07:53 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.009223699569702148, IO: 0.4809598922729492
+[07 11:08:17 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:08:17 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.011010169982910156, IO: 0.32825469970703125
+[07 11:08:42 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:08:43 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.010647296905517578, IO: 0.5167067050933838
+[07 11:09:07 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:09:08 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.017160654067993164, IO: 0.4149963855743408
+[07 11:09:33 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:09:33 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008810043334960938, IO: 0.35837411880493164
+[07 11:09:58 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:09:58 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.009393692016601562, IO: 0.42194628715515137
+[07 11:10:23 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:10:23 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.011148691177368164, IO: 0.34822726249694824
+[07 11:10:48 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:10:48 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.009823083877563477, IO: 0.34647369384765625
+[07 11:11:13 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:11:14 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.009585857391357422, IO: 0.41435956954956055
+[07 11:11:39 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:11:39 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.011621475219726562, IO: 0.3893585205078125
+[07 11:12:04 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:12:04 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.009419679641723633, IO: 0.39536285400390625
+[07 11:12:29 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:12:29 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.0139007568359375, IO: 0.30791783332824707
+[07 11:12:54 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:12:55 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.010693550109863281, IO: 0.3992149829864502
+[07 11:13:20 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:13:20 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.017952919006347656, IO: 0.37074947357177734
+[07 11:13:45 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:13:45 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.014339685440063477, IO: 0.367628812789917
+[07 11:14:11 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:14:11 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.0077779293060302734, IO: 0.3431100845336914
+[07 11:14:36 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:14:36 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.009151220321655273, IO: 0.4397392272949219
+[07 11:15:01 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:15:02 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.010950088500976562, IO: 0.37976932525634766
+[07 11:15:26 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:15:27 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.014060735702514648, IO: 0.3777773380279541
+[07 11:15:52 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:15:52 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.010514259338378906, IO: 0.3419041633605957
+[07 11:16:17 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:16:18 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008724689483642578, IO: 0.34139227867126465
+[07 11:16:43 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:16:43 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.011091232299804688, IO: 0.3532545566558838
+[07 11:17:08 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:17:08 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.013826847076416016, IO: 0.43377208709716797
+[07 11:17:33 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:17:34 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.014543771743774414, IO: 0.38415956497192383
+[07 11:17:59 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:17:59 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.00890493392944336, IO: 0.34363317489624023
+[07 11:18:24 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:18:25 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.011419534683227539, IO: 0.3486151695251465
+[07 11:18:50 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:18:50 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.014533042907714844, IO: 0.37914299964904785
+[07 11:19:16 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:19:16 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.013477563858032227, IO: 0.3841562271118164
+[07 11:19:41 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:19:42 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.015837669372558594, IO: 0.5007994174957275
+[07 11:20:07 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:20:07 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.009678125381469727, IO: 0.5372662544250488
+[07 11:20:32 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:20:33 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.01060032844543457, IO: 0.39699339866638184
+[07 11:20:58 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:20:58 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.010378837585449219, IO: 0.3806912899017334
+[07 11:21:23 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:21:24 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.01786971092224121, IO: 0.349992036819458
+[07 11:21:49 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:21:49 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.013908147811889648, IO: 0.38941168785095215
+[07 11:22:14 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:22:14 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.019793033599853516, IO: 0.40758609771728516
+[07 11:22:40 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:22:40 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.015667438507080078, IO: 0.478015661239624
+[07 11:23:05 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:23:06 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.00830388069152832, IO: 0.3755619525909424
+[07 11:23:31 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:23:31 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.010686635971069336, IO: 0.4332907199859619
+[07 11:23:56 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:23:57 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.01618337631225586, IO: 0.4079728126525879
+[07 11:24:22 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:24:22 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.010117530822753906, IO: 0.4787752628326416
+[07 11:24:48 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:24:48 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.011870622634887695, IO: 0.5148110389709473
+[07 11:25:13 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:25:14 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.00942850112915039, IO: 0.3924260139465332
+[07 11:25:39 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:25:39 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008315563201904297, IO: 0.42713499069213867
+[07 11:26:04 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:26:05 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008880853652954102, IO: 0.3646113872528076
+[07 11:26:30 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:26:30 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.012732267379760742, IO: 0.3391904830932617
+[07 11:26:55 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:26:55 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.010941743850708008, IO: 0.34875011444091797
+[07 11:27:20 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:27:21 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.014250755310058594, IO: 0.5162570476531982
+[07 11:27:45 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:27:46 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.009080886840820312, IO: 0.34085750579833984
+[07 11:28:11 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:28:11 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.01324152946472168, IO: 0.3908360004425049
+[07 11:28:37 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:28:37 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.010832071304321289, IO: 0.5007381439208984
+[07 11:29:02 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:29:02 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.01067495346069336, IO: 0.3519742488861084
+[07 11:29:27 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:29:28 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.01531076431274414, IO: 0.41631007194519043
+[07 11:29:53 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:29:53 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.011635065078735352, IO: 0.32537198066711426
+[07 11:30:18 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:30:18 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.007982015609741211, IO: 0.35131382942199707
+[07 11:30:43 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:30:44 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.009534120559692383, IO: 0.3847479820251465
+[07 11:31:09 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:31:09 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.010027647018432617, IO: 0.3752598762512207
+[07 11:31:34 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:31:35 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008246183395385742, IO: 0.33702969551086426
+[07 11:32:00 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:32:00 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.007260560989379883, IO: 0.38581037521362305
+[07 11:32:26 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:32:26 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008573055267333984, IO: 0.426973819732666
+[07 11:32:51 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:32:51 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.012034177780151367, IO: 0.31856226921081543
+[07 11:33:16 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:33:17 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.00842738151550293, IO: 0.3699951171875
+[07 11:33:42 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:33:42 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.012569189071655273, IO: 0.4811124801635742
+[07 11:34:08 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:34:08 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.011498212814331055, IO: 0.4042184352874756
+[07 11:34:33 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:34:33 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.014388561248779297, IO: 0.3729419708251953
+[07 11:34:59 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:34:59 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.01683640480041504, IO: 0.5394284725189209
+[07 11:35:25 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:35:25 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.015619754791259766, IO: 0.3077125549316406
+[07 11:35:50 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:35:50 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008999824523925781, IO: 0.4165799617767334
+[07 11:36:15 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:36:16 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008746147155761719, IO: 0.308121919631958
+[07 11:36:41 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:36:41 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.014060497283935547, IO: 0.3643934726715088
+[07 11:37:07 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:37:07 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.012819290161132812, IO: 0.3643312454223633
+[07 11:37:32 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:37:33 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.02153921127319336, IO: 0.3295409679412842
+[07 11:37:58 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:37:59 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.017781734466552734, IO: 0.4906136989593506
+[07 11:38:24 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:38:24 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.012175798416137695, IO: 0.3805880546569824
+[07 11:38:50 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:38:50 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.014255285263061523, IO: 0.36234402656555176
+[07 11:39:15 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:39:16 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.012079954147338867, IO: 0.4250302314758301
+[07 11:39:41 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:39:41 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.01495051383972168, IO: 0.3860762119293213
+[07 11:40:06 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:40:07 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.013344049453735352, IO: 0.32762575149536133
+[07 11:40:32 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:40:32 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.011683464050292969, IO: 0.3751041889190674
+[07 11:40:57 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:40:58 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.009226083755493164, IO: 0.4181327819824219
+[07 11:41:23 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:41:23 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.009043693542480469, IO: 0.3495488166809082
+[07 11:41:48 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:41:48 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.017214059829711914, IO: 0.35225534439086914
+[07 11:42:13 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:42:13 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.010576009750366211, IO: 0.3671438694000244
+[07 11:42:38 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:42:39 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.013852596282958984, IO: 0.488771915435791
+[07 11:43:04 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:43:04 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008477926254272461, IO: 0.34627294540405273
+[07 11:43:29 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:43:29 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.011694192886352539, IO: 0.43474316596984863
+[07 11:43:54 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:43:54 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.014485359191894531, IO: 0.34535694122314453
+[07 11:44:19 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:44:20 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008975982666015625, IO: 0.3792262077331543
+[07 11:44:45 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:44:45 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.02402043342590332, IO: 0.36168479919433594
+[07 11:45:10 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:45:10 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.012421846389770508, IO: 0.47144269943237305
+[07 11:45:35 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:45:36 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008940696716308594, IO: 0.391406774520874
+[07 11:46:01 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:46:01 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.00858306884765625, IO: 0.46479082107543945
+[07 11:46:26 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:46:26 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.009058475494384766, IO: 0.3121461868286133
+[07 11:46:52 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:46:52 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008656024932861328, IO: 0.3679056167602539
+[07 11:47:17 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:47:17 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008793115615844727, IO: 0.35004639625549316
+[07 11:47:42 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:47:43 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.009009599685668945, IO: 0.5451881885528564
+[07 11:48:08 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:48:08 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.00999140739440918, IO: 0.3592662811279297
+[07 11:48:33 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:48:33 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.010626077651977539, IO: 0.5312707424163818
+[07 11:48:58 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:48:58 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.010840892791748047, IO: 0.3605656623840332
+[07 11:49:23 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:49:24 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.014445781707763672, IO: 0.3940849304199219
+[07 11:49:49 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:49:49 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.012810945510864258, IO: 0.35497570037841797
+[07 11:50:14 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:50:15 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.009659767150878906, IO: 0.387911319732666
+[07 11:50:39 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:50:40 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.009128808975219727, IO: 0.50482177734375
+[07 11:51:05 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:51:05 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.010902166366577148, IO: 0.3279283046722412
+[07 11:51:30 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:51:30 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.013692378997802734, IO: 0.3628120422363281
+[07 11:51:55 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:51:56 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008510589599609375, IO: 0.4369795322418213
+[07 11:52:21 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:52:21 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.014285087585449219, IO: 0.38208460807800293
+[07 11:52:46 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:52:46 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008275032043457031, IO: 0.38986802101135254
+[07 11:53:11 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:53:12 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.00982809066772461, IO: 0.3856832981109619
+[07 11:53:37 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:53:37 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.009891986846923828, IO: 0.38695669174194336
+[07 11:54:02 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:54:02 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.010014057159423828, IO: 0.5738275051116943
+[07 11:54:27 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:54:28 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008144378662109375, IO: 0.4526071548461914
+[07 11:54:53 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:54:53 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008218526840209961, IO: 0.3779106140136719
+[07 11:55:18 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:55:19 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.013709783554077148, IO: 0.3795621395111084
+[07 11:55:44 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:55:44 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.012963056564331055, IO: 0.34578394889831543
+[07 11:56:09 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:56:09 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.01462554931640625, IO: 0.36850690841674805
+[07 11:56:34 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:56:35 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.016002178192138672, IO: 0.30643296241760254
+[07 11:57:00 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:57:00 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008467912673950195, IO: 0.421612024307251
+[07 11:57:25 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:57:25 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.009305000305175781, IO: 0.40379881858825684
+[07 11:57:50 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:57:51 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008298158645629883, IO: 0.3603825569152832
+[07 11:58:16 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:58:16 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.013950824737548828, IO: 0.4520411491394043
+[07 11:58:41 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:58:42 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.009382247924804688, IO: 0.4766361713409424
+[07 11:59:07 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:59:07 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.013496875762939453, IO: 0.333235502243042
+[07 11:59:32 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:59:32 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.012749195098876953, IO: 0.5140678882598877
+[07 11:59:57 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 11:59:58 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.01226496696472168, IO: 0.3616001605987549
+[07 12:00:23 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:00:23 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.009638547897338867, IO: 0.3537895679473877
+[07 12:00:48 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:00:48 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008724451065063477, IO: 0.34078121185302734
+[07 12:01:13 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:01:14 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.010337114334106445, IO: 0.38208627700805664
+[07 12:01:39 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:01:39 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008167266845703125, IO: 0.38492846488952637
+[07 12:02:04 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:02:04 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.01113581657409668, IO: 0.34443235397338867
+[07 12:02:29 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:02:29 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008279085159301758, IO: 0.3635416030883789
+[07 12:02:55 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:02:55 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008795022964477539, IO: 0.3533365726470947
+[07 12:03:20 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:03:20 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008469581604003906, IO: 0.3600499629974365
+[07 12:03:45 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:03:45 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008652448654174805, IO: 0.4043745994567871
+[07 12:04:10 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:04:10 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.015425682067871094, IO: 0.3432490825653076
+[07 12:04:35 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:04:36 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.009703874588012695, IO: 0.32396554946899414
+[07 12:05:00 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:05:01 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.007572174072265625, IO: 0.38495898246765137
+[07 12:05:26 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:05:26 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.013435602188110352, IO: 0.33911657333374023
+[07 12:05:51 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:05:51 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.007623910903930664, IO: 0.3474268913269043
+[07 12:06:16 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:06:16 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.007757663726806641, IO: 0.37195777893066406
+[07 12:06:41 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:06:42 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.00865626335144043, IO: 0.498690128326416
+[07 12:07:07 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:07:07 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.0077555179595947266, IO: 0.3280966281890869
+[07 12:07:32 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:07:32 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.009016275405883789, IO: 0.3725111484527588
+[07 12:07:57 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:07:57 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.007768392562866211, IO: 0.3563191890716553
+[07 12:08:22 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:08:23 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.014241695404052734, IO: 0.33365368843078613
+[07 12:08:47 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:08:48 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.009145021438598633, IO: 0.44121861457824707
+[07 12:09:12 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:09:13 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.007779836654663086, IO: 0.3771822452545166
+[07 12:09:38 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:09:38 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.012302875518798828, IO: 0.3306698799133301
+[07 12:10:03 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:10:03 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008707284927368164, IO: 0.31601691246032715
+[07 12:10:28 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:10:29 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.007655620574951172, IO: 0.33466410636901855
+[07 12:10:54 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:10:54 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.009038686752319336, IO: 0.4727945327758789
+[07 12:11:19 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:11:19 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.009048938751220703, IO: 0.3166041374206543
+[07 12:11:44 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:11:44 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.010001897811889648, IO: 0.3544607162475586
+[07 12:12:09 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:12:10 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.009274721145629883, IO: 0.4780440330505371
+[07 12:12:34 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:12:35 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.01170969009399414, IO: 0.3490488529205322
+[07 12:13:00 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:13:00 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.01234292984008789, IO: 0.33090901374816895
+[07 12:13:25 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:13:26 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.015150308609008789, IO: 0.3749723434448242
+[07 12:13:50 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:13:50 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.009622573852539062, IO: 0.34212613105773926
+[07 12:14:15 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:14:16 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.00801706314086914, IO: 0.4599473476409912
+[07 12:14:41 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:14:41 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.01062774658203125, IO: 0.489898681640625
+[07 12:15:06 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:15:07 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.007767915725708008, IO: 0.38770294189453125
+[07 12:15:31 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:15:32 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008424520492553711, IO: 0.3746974468231201
+[07 12:15:57 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:15:57 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.015404224395751953, IO: 0.35701656341552734
+[07 12:16:22 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:16:22 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008433341979980469, IO: 0.39000654220581055
+[07 12:16:47 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:16:48 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.00855875015258789, IO: 0.38434767723083496
+[07 12:17:13 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:17:13 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008126258850097656, IO: 0.3873739242553711
+[07 12:17:33 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data.ORI
+[07 12:17:34 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data.ORI, Time usage:
+	prepare snapshot: 0.008863449096679688, IO: 0.38924336433410645
+[07 12:17:38 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data.bestmodel
+[07 12:17:39 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data.bestmodel, Time usage:
+	prepare snapshot: 0.009956598281860352, IO: 0.2973053455352783
+[07 12:17:39 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:17:39 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.011957406997680664, IO: 0.27242231369018555
+[07 12:18:04 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:18:04 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.011554956436157227, IO: 0.4913201332092285
+[07 12:18:29 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:18:30 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.012595653533935547, IO: 0.3196547031402588
+[07 12:18:55 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:18:55 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008203506469726562, IO: 0.360490083694458
+[07 12:19:20 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:19:20 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008399009704589844, IO: 0.3273038864135742
+[07 12:19:46 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:19:46 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.010097742080688477, IO: 0.34221339225769043
+[07 12:20:11 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:20:11 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.007999897003173828, IO: 0.3186023235321045
+[07 12:20:36 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:20:37 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.011364221572875977, IO: 0.4019327163696289
+[07 12:21:02 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:21:02 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.013288497924804688, IO: 0.3700225353240967
+[07 12:21:27 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:21:28 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.00767207145690918, IO: 0.3703296184539795
+[07 12:21:52 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:21:53 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008737802505493164, IO: 0.3964211940765381
+[07 12:22:18 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:22:18 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.009517669677734375, IO: 0.3815739154815674
+[07 12:22:43 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:22:44 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008304119110107422, IO: 0.3610804080963135
+[07 12:23:08 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:23:09 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008272409439086914, IO: 0.5071878433227539
+[07 12:23:34 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:23:34 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.01205134391784668, IO: 0.348771333694458
+[07 12:23:59 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:23:59 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.009307384490966797, IO: 0.35228395462036133
+[07 12:24:24 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:24:25 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008246898651123047, IO: 0.3408620357513428
+[07 12:24:50 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:24:50 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008030176162719727, IO: 0.48528337478637695
+[07 12:25:15 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:25:16 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.007745027542114258, IO: 0.39809393882751465
+[07 12:25:41 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:25:41 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.007678508758544922, IO: 0.46802639961242676
+[07 12:26:06 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:26:07 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.010682344436645508, IO: 0.33913230895996094
+[07 12:26:32 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:26:32 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.009732961654663086, IO: 0.38095879554748535
+[07 12:26:58 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:26:58 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.00824880599975586, IO: 0.33518147468566895
+[07 12:27:23 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:27:23 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.010196447372436523, IO: 0.3616499900817871
+[07 12:27:48 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:27:49 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.008976221084594727, IO: 0.4441959857940674
+[07 12:28:14 189@env.py:meghair.train.env] Saving checkpoint to file data/plain30.data
+[07 12:28:14 204@env.py:meghair.train.env] Save checkpoint to file data/plain30.data, Time usage:
+	prepare snapshot: 0.009697198867797852, IO: 0.3591277599334717
+[07 12:28:33 0@(unknown file):megbrain] WRN cuda comp node method called after global finalize
